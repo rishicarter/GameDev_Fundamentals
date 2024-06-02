@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://w2n1dx8ce267"]
+
+[ext_resource type="Texture2D" uid="uid://ia4wc8qphuye" path="res://assets/divider.png" id="1_vtrca"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l4xtl"]
+size = Vector2(1911.63, 32.6649)
+
+[node name="divider" type="Sprite2D"]
+position = Vector2(2, 0)
+scale = Vector2(0.96, 0.524)
+texture = ExtResource("1_vtrca")
+metadata/_edit_group_ = true
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+scale = Vector2(1, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(0.000107873, -4.38071e-07)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_l4xtl")

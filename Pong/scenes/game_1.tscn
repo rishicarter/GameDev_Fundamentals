@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://vul18qi07l7x"]
+
+[ext_resource type="PackedScene" uid="uid://br14g07t0ygvb" path="res://scenes/block.tscn" id="1_xehje"]
+[ext_resource type="PackedScene" uid="uid://byiku06ot50lk" path="res://scenes/ball.tscn" id="2_g8gd4"]
+[ext_resource type="PackedScene" uid="uid://w2n1dx8ce267" path="res://scenes/divider.tscn" id="3_5gv58"]
+
+[node name="Game1" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(962, 542)
+scale = Vector2(81.2826, 29.8365)
+
+[node name="player" parent="." instance=ExtResource("1_xehje")]
+position = Vector2(29, 574)
+
+[node name="enemy" parent="." instance=ExtResource("1_xehje")]
+position = Vector2(1892, 595)
+
+[node name="ball" parent="." instance=ExtResource("2_g8gd4")]
+position = Vector2(965, 552)
+
+[node name="divider" parent="." instance=ExtResource("3_5gv58")]
+position = Vector2(961, 36)
+
+[node name="divider2" parent="." instance=ExtResource("3_5gv58")]
+position = Vector2(965, 1054)
